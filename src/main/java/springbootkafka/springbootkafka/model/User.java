@@ -11,4 +11,7 @@ public class User {
         this.job = job;
         this.salary = salary;
     }
+
+    public User() {
+    }
 }

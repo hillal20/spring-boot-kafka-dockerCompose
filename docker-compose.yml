@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  web:
+     image: kafka-docker-compose-app
+     ports : ["8085:8085"] # machinePort:insideContainerPort
+     container_name: kafka-docker-compose-app
+     networks:
+         - kafka-network # linking the app to the right network
+networks: # creating a network, the network name will be  spring-boot-kafka_kafka-network
+   kafka-network:
+        driver: bridge
+
+
+
+
+
+
+
